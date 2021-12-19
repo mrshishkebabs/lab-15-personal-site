@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload="draw()">
+  <body style="background-color:#61D63F;">
+
+    <div id="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="myportfolio.html">My Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+        <script src="navbar.v01.js"></script>
+    <div class="stuff" id="first">
+        <h1>Real life Art</h1>
+    </div>
+    <div class="trash" id="media">
+        <img class="trash" src="trashscythe.jpg" alt="The Trash Scythe">
+        <h2>"The Trash Scythe"</h2>
+        <h3>One of my strangest work yet...<h3>
+        <p>For the Mixed Media Recycled Sculpture, I was planning to use five pringle cans (L), over a hundred bottle caps, and a few empty paper towel rolls in order to make a scythe. So first, I decided to create the snath using the empty pringle cans that I was snacking on. I didn’t stack the cans directly and instead gave a small degree turn in order to mimic the bent look that all scythe have on their snath. After stacking I decided to bond them using a hot glue gun along with the empty paper towels rolls (which were cut from one side) to keep the structure from losing its towering form. 
+Next part I decided to work on was the scythe’s blade which I plan on using bottle caps to represent it. These bottles caps were collected from the time I decided to drink water bottles for a while along with some other sorts of drinks that have bottle caps variation along the way. With it, I made a bee-comb type of pattern and began to make the scythe’s blade shape. This process was done twice in the behind in order to maintain the scythe’s shape without breaking apart. At last after it was done, I attached it to an almost split pringle can using a hot glue gun. After the hot glue cooled down, I finally stuck it into the snath with the glue gun again, thus finishing my Mixed Media Scythe!</p>
+    </div>
+        <div class="stuff" id="first">
+    </div>
+    <div class="trash" id="media">
+        <img class="trash" src="placementart2.jpg" alt="Death Through TV">
+        <h2>"Death Through TV"</h2>
+        <h3>Blockage to reality...<h3>
+        <p>In this work, I decided to put a background and the figurine to build on that theme. Starting with the background, I thought the window would be a perfect place for lighting as well as meaning toward the idea of watching television. The material I wanted to use was duct tape since I had different types of color that would show the line’s direction that I was going for. While making the tape droop down with the same proportion apart, at below I played around with the balance of how far it should go down to give a sense of abstract for my work. Lastly, I place a special checked texture along with the black duct tape to define it variety.
+Next and last I worked on the figurine part of my sculpture. Simply I used a cloth hanger as a placer as well as something to decorate my figurine. By using a mask, hat, wig, staff, and a black cloak, I was able to create something like a person form. By using that form, I then had to place the work next to the window in a place where it would define spacing. Finishing the work, I lastly used the daylight as well as spot light to play around with installed sculpture’s value. The images above are the ones I thought was the best.</p>
+    </div>
+        <div class="stuff" id="first">
+    </div>
+    <div class="trash" id="media">
+        <img class="trash" src="paperlollipop.jpg" alt="False Treat">
+        <h2>"False Treat"</h2>
+        <h3>Be careful. It not real...<h3>
+        <p>For the Paper Mache Sculpture, I’ve had many ideas that had to do with a circular base. However, there was a lack of materials that I had and errors that I've made when creating this project. Without cardboard I was unable to create the 10-sided dice that I had originally planned to. As for the errors, the spikes that were supposed to attach to the ball quickly fell apart because of the weak bond that prevented it from sticking from my base. While I was struggling I remembered from Claes Oldenburg reading, “I am for all art that takes its form from the lines of life itself, that twists and extends and accumulates and spits and drips, and is heavy and coarse and blunt and sweet and stupid as life itself.”. From there I was able to quickly find a new way to represent the project since art can be any kind of form.
+ So I changed my method into focusing on how I was gonna make that work. From there, I started with the lollipop stick which is just made out of condensed newspaper. Separately I painted both the ball and the stick with white and red although with the red being less successful in covering the newspaper. But after finishing it, it actually did have an interesting look so I left it as that. Once the paint dries I simply stick the two together with a hot glue gun and complete my piece, MMMMM Lollipop Mache.</p>
+    </div>
+    <div class="stuff" id="first">
+        <h1>Coding</h1>
+        <h3>Here is my current skill as a coder</h3>
+    </div>
+
+    <canvas id="sketch" width="1490" height="700"></canvas>
+
+    <script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+
+            for (let c = 1; c <= 8; c++) { //Column
+                for (let r = 1; r <= 19; r++) { //Row
+                    context.fillStyle = "#f2f2f2";
+                    context.fillRect((75*r)-25, (75*c)-25, 50, 50);
+                }   
+            }
+
+            for (let c = 1; c <= 12; c++) { //Column
+                for (let r = 1; r <= 29; r++) { //Row
+                    context.beginPath();
+                    context.fillStyle = "#CDFFDB";
+                    context.arc((r * 50), (c * 50), 20, 0, 2 * Math.PI, true);
+                    context.closePath();
+                    context.fill();
+                }   
+            }
+
+            for (let c = 1; c <= 12; c++) { //Column
+                for (let r = 1; r <= 29; r++) { //Row
+                    context.beginPath();
+                    context.fillStyle = "#61D63F";
+                    context.arc((r * 50), (c * 50), 5, 0, 2 * Math.PI, true);
+                    context.closePath();
+                    context.fill();
+                }   
+            }
+
+		}
+	</script>
+    <div class="stuff" id="first">
+        <h3>HTML and Javascript is very interesting and I still have a lot to learn.</h3>
+        <a href="contact.html"<h5>Anyway do you want to contact sometimes?</h5></a>
+    </div>
+    <script src="navbar.v01.js"></script>
+   </body>
+</html>
